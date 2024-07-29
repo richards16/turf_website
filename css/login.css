@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+}
+
+.container {
+    background-color: aliceblue;
+    padding: 10px;
+    width: 600px;
+    /* min-height: 500px; */
+    display: flex;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.logo-section .title{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 2;
+}
+
+.vl{
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.line{
+    height: 15px;
+    background-color: black;
+}
+
+.login-section{
+    flex: 3;
+
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+.login-section .title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+    gap: 10px;
+}
+
+form input{
+    all: unset;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form .forget-pass{
+    margin-left: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+
+form .forget-pass:hover{
+    color: aqua;
+    transition: .5s;
+}
+
+form button{
+    all: unset;
+    background-color: rgb(0, 191, 255);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+    transition: 1s;
+}
+
+form button:hover{
+    background-color: rgb(0, 89, 255);
+    color: white;
+    transition: .4s;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign-in{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 660px) {
+    .container {
+      flex-direction: column;
+      width: fit-content;
+    }
+  }
