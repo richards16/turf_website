@@ -6,6 +6,7 @@
     padding: 0%;
     /* border: 1px solid red; */
     font-family: "Poppins";
+    
 }
 
 body{
@@ -190,7 +191,7 @@ nav ul li a{
     height: 100%;
 }
 
-.card .details li{
+.card .details li {
     list-style: none;
     padding: 3px;
     display: flex;
@@ -201,6 +202,7 @@ nav ul li a{
     border-bottom: 1px solid black;
 }
 
+
 .card .details li:last-child{
     border-style: none;
 }
@@ -210,6 +212,9 @@ nav ul li a{
     padding: 10px 20px;
 }
 
+.upcoming h2{
+    padding: 20px;
+}
 
 
 
@@ -218,75 +223,6 @@ nav ul li a{
     margin: 0 auto;
     padding: 10px 20px;
 }
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-.imgabout{
-    flex:1;
-    margin-right: 40px;
-  
-}
-.imgabout img{
-    max-width: 100%;
-    min-height: 300px;
-    max-height: 400px;
-    display: block;
-    border-radius: 30px;
-}
-.imgabout img:hover{
-    transform: scale(1.1);
-}
-.about-para{
-    flex: 1;
-    /* background-color: antiquewhite; */
-    border-radius: 30px;
-}
-.about-para p:hover{
-    color: black;
-    transition: 900ms;
-}
-.about-para h3{
-    font-size: 25px;
-    margin-bottom: 15px;
-    margin: 5px;
-    padding: 10px;
-    font-weight: 750;
-}
-
-.about-para p{
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 10px;
-    color: rgb(11, 0, 14);
-    transition: 900ms;
-}
-.about-para a{
-    text-decoration: none;
-    color: rgb(8, 8, 8);
-    border: 3px solid black;
-    padding: 10px;
-    background-color: rgb(41, 15, 210);
-    border-radius: 10px;
-    display: block;
-    width: fit-content;
-    margin-top: 20px;
-    transition: 1s;
-    font-weight: 600;
-    margin: 20px;
-}
-
-.about-para a:hover{
-    background-color: rgb(15, 58, 211);
-    color: rgb(4, 1, 8);
-    transition: 500ms;
-}
-
-
-
 
 
 
@@ -309,7 +245,7 @@ nav ul li a{
     .card{
         width: 250px;
         font-size: .8rem;
-        height: 280px;
+        height: 290px;
     }
 
     .card .turf-name{
@@ -323,6 +259,14 @@ nav ul li a{
         flex-wrap: wrap;
         padding: 10px;
         gap: 20px;
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: 900px;
     }
 
   }

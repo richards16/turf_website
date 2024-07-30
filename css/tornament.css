@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid red; */
+    font-family: "Poppins";
+    
+}
+
+body{
+    background-color: #F3FF90;
+}
+
+nav{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #059212;
+    color: #F3FF90;
+}
+
+nav .logo-container{
+    flex: 2;
+}
+
+nav .logo{
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+@keyframes logo-color {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+nav .logo .line{
+    width: 0px;
+    height: 5px;
+    background-color: #F3FF90;
+    animation: logo-color 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 5px;
+    flex: 3;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F3FF90;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    height: 2.5px ;
+    width: 0%;
+    background-color: #F3FF90;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transition: 1s;
+}
+
+
+nav ul li a:hover::after{
+    width: 100%;
+    transition: .4s;
+}
+
+main{
+    padding: 1rem;
+}
+
+main .registered {
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #bef56b;
+}
+
+.tornament{
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.tornament .img{
+    width: 40%;
+    background-size: cover;
+    aspect-ratio: 16/9;
+    background-image: url("../assets/turf-1.jpg");
+}
+
+.tornament .details{
+    flex: auto;
+}
+
+.tornament .details .name{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f1ff76;
+    border-bottom: 1px solid black;
+}
+
+.tornament .details .sub{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tornament .details .sub-d{
+    padding: .5rem;
+    border: 1px solid #979d65;
+    background-color: #ffd575;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem 2rem;
+    flex: auto;
+    font-weight: 600;
+}
+
+
+.tornament .details .sub-d:hover{
+    background-color: #e4f563;
+}
+
+.registered .title{
+    padding: .3rem;
+    font-weight:600 ;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .tornament{
+        flex-direction: column;
+    }
+    .tornament .img{
+        width: 100%;
+        background-size: cover;
+        aspect-ratio: 16/9;
+        background-image: url("../assets/turf-1.jpg");
+    }
+}
