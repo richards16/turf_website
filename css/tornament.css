@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     /* border: 1px solid red; */
     font-family: "Poppins";
-    
+    /* border: 3px solid red; */
+
 }
 
-body{
+body {
     background-color: #F3FF90;
 }
 
-nav{
+nav {
     padding: 10px 25px;
     display: flex;
     justify-content: space-between;
@@ -22,11 +23,11 @@ nav{
     color: #F3FF90;
 }
 
-nav .logo-container{
+nav .logo-container {
     flex: 2;
 }
 
-nav .logo{
+nav .logo {
     font-weight: 800;
     font-size: 30px;
     display: flex;
@@ -35,25 +36,26 @@ nav .logo{
 }
 
 @keyframes logo-color {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }
 
-nav .logo .line{
+nav .logo .line {
     width: 0px;
     height: 5px;
     background-color: #F3FF90;
     animation: logo-color 3s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
 
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 5px;
     flex: 3;
@@ -62,10 +64,10 @@ nav ul{
 
 nav ul li {
     list-style: none;
-    
+
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
@@ -73,9 +75,9 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: "";
-    height: 2.5px ;
+    height: 2.5px;
     width: 0%;
     background-color: #F3FF90;
     position: absolute;
@@ -85,12 +87,12 @@ nav ul li a::after{
 }
 
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
     transition: .4s;
 }
 
-main{
+main {
     padding: 1rem;
 }
 
@@ -102,25 +104,42 @@ main .registered {
     background-color: #bef56b;
 }
 
-.tornament{
+.tornament {
     display: flex;
     border: 2px solid rgb(0, 0, 0);
     overflow: hidden;
     border-radius: 1rem;
+    /* border: 3px solid red; */
+    margin-bottom: 10px;
 }
 
-.tornament .img{
+.tornament .img {
     width: 40%;
     background-size: cover;
     aspect-ratio: 16/9;
-    background-image: url("../assets/turf-1.jpg");
+    background-color: aliceblue;
 }
 
-.tornament .details{
+.tournament1 {
+    background-image: url(../assets/tournament1.jpeg);
+}
+
+.tournament2 {
+    background-image: url(../assets/tournment2.jpeg);
+}
+
+.tournament3 {
+    background-image: url(../assets/tournament3.jpeg);
+}
+.tournament4{
+    background-image: url(../assets/womentour.jpeg);
+}
+
+.tornament .details {
     flex: auto;
 }
 
-.tornament .details .name{
+.tornament .details .name {
     width: 100%;
     padding: 1rem;
     font-size: 1.5rem;
@@ -130,12 +149,16 @@ main .registered {
     border-bottom: 1px solid black;
 }
 
-.tornament .details .sub{
+.tornament .details .sub {
     display: flex;
     flex-wrap: wrap;
+    /* border: 2px solid blueviolet; */
+    height: auto;
+    /* overflow: scroll; */
 }
 
-.tornament .details .sub-d{
+
+.tornament .details .sub-d {
     padding: .5rem;
     border: 1px solid #979d65;
     background-color: #ffd575;
@@ -145,27 +168,50 @@ main .registered {
     padding: .6rem 2rem;
     flex: auto;
     font-weight: 600;
+    transition: 1s;
+    /* height: auto; */
 }
 
 
-.tornament .details .sub-d:hover{
+.tornament .details .sub-d:hover {
     background-color: #e4f563;
+    transition: .5s;
 }
 
-.registered .title{
+.registered .title {
     padding: .3rem;
-    font-weight:600 ;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .tornament{
+    .tornament {
         flex-direction: column;
+        margin-bottom: 10px;
     }
-    .tornament .img{
+
+    .tornament .img {
         width: 100%;
         background-size: cover;
         aspect-ratio: 16/9;
         background-image: url("../assets/turf-1.jpg");
     }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+   
+
 }

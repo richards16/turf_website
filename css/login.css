@@ -9,15 +9,93 @@ body {
     background-image: url("../assets/bg.jpg");
     background-size: cover;
     background-position: bottom;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Poppins";
 }
 
+
+.login-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80vh;
+    /* border: 3px solid blue; */
+}
+nav{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #059212;
+    color: #F3FF90;
+}
+
+nav .logo-container{
+    flex: 2;
+}
+
+nav .logo{
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+@keyframes logo-color {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+nav .logo .line{
+    width: 0px;
+    height: 5px;
+    background-color: #F3FF90;
+    animation: logo-color 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 5px;
+    flex: 3;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F3FF90;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    height: 2.5px ;
+    width: 0%;
+    background-color: #F3FF90;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transition: 1s;
+}
+
+
+nav ul li a:hover::after{
+    width: 100%;
+    transition: .4s;
+}
 .container {
     background-color: aliceblue;
     padding: 10px;
@@ -139,4 +217,24 @@ form button:hover{
       flex-direction: column;
       width: fit-content;
     }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+    .container{
+        width: 400px;
+        padding: 10px;
+        margin:10px
+    }
+
   }

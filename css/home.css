@@ -70,8 +70,24 @@ nav ul li a{
     font-weight: 400;
     font-size: 20px;
     color: #F3FF90;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    height: 2.5px ;
+    width: 0%;
+    background-color: #F3FF90;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transition: 1s;
 }
 
+
+nav ul li a:hover::after{
+    width: 100%;
+    transition: .4s;
+}
 .search{
     display: flex;
     justify-content: center;
